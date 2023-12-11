@@ -22,9 +22,15 @@ func _process(delta):
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-		$AnimatedSprite2D.play()
+		$AnimatedSprite2D.animation = "run"
 	else:
-		$AnimatedSprite2D.stop()
-	
+		$AnimatedSprite2D.animation = "idle"
+		
+	if velocity.x != 0:
+		$AnimatedSprite2D.flip_v = false
+		# See the note below about boolean assignment.
+		$AnimatedSprite2D.flip_h = velocity.x < 0
+		
+	$AnimatedSprite2D.play()
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
