@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [global]
 
 Textures=false
+cs=false
 
 [gui]
 
