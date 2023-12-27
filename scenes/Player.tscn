@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://bemufbb5wj7g1"]
 
-[ext_resource type="Script" path="res://Player.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://753h50um25ud" path="res://assets/knight/knight_f_idle_anim_f3.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://1dqv2qy1kfl" path="res://assets/knight/knight_f_run_anim_f1.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://bj3l0xy5yy7mr" path="res://assets/knight/knight_f_hit_anim_f0.png" id="4"]
